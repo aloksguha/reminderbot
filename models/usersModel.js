@@ -3,7 +3,8 @@ var Schema   = mongoose.Schema;
 
 var usersSchema = new Schema({
 	'username' : String,
-	'authdetails' : Array,
+	'teamname' : String,
+	'authdetails' : Schema.Types.Mixed,
 	'createdat' : Date
 });
 

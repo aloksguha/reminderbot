@@ -1,5 +1,5 @@
 var remindersModel = require('../models/remindersModel.js');
-
+var moment = require('moment-timezone');
 /**
  * remindersController.js
  *
