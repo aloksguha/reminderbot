@@ -9,7 +9,8 @@ var remindersSchema = new Schema({
 	'updatedOn': { type: Date, default: Date.now },
 	'isReminded' : Boolean,
 	'unsuccessfulattempts' : Number,
-
+	'createdOn': { type: Date, default: Date.now },
+	'creationData':Schema.Types.Mixed
 });
 
 module.exports = mongoose.model('reminders', remindersSchema);
